@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="practicaltest01var03.eim.systems.cs.pub.ro.practicaltest01var03.PracticalTest01Var03MainActivity">
+
+
+    <Button
+        android:id="@+id/navigate_to_secondary_activity_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/navigate_to_secondary_activity" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/navigate_to_secondary_activity_button"
+        android:ems="9"
+        android:enabled="true"
+        android:gravity="center"
+        android:inputType="text"
+        android:saveEnabled="false" />
+
+    <CheckBox
+        android:id="@+id/checkbox_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/name"
+        android:layout_below="@id/name" />
+
+    <EditText
+        android:id="@+id/grupa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/name"
+        android:ems="9"
+        android:enabled="true"
+        android:gravity="center"
+        android:inputType="text"
+        android:saveEnabled="false" />
+
+    <CheckBox
+        android:id="@+id/checkbox_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/grupa"
+        android:layout_below="@id/grupa"
+        />
+
+    <Button
+        android:id="@+id/display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/display"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/grupa"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/eticheta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/display"
+        android:ems="9"
+        android:enabled="false"
+        android:gravity="center"
+        android:inputType="number"
+        android:saveEnabled="false" />
+
+
+
+</RelativeLayout>
